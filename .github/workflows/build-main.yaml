@@ -7,6 +7,8 @@ name: build-main
 # releases (built by goreleaser on release-please cuts).
 on:
   workflow_dispatch:
+  push:
+    branches: [fork-build]
 
 permissions:
   contents: read
